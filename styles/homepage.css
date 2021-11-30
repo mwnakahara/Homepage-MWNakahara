@@ -1,10 +1,15 @@
 h1,
 h2 {
   text-align: center;
+  margin-top: 15px;
 }
 
 .btn {
   display: block;
   margin: 0 auto;
   width: fit-content;
+}
+
+.homepage-buttons {
+  padding: 40px 0;
 }
