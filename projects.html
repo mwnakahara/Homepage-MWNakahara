@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">MWNakahara</a>
+          <a class="navbar-brand" href="/">MWNakahara</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -45,7 +45,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="/projects.html"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -84,40 +84,79 @@
         </div>
       </nav>
     </header>
-    <h1>My projects</h1>
-    <div class="container">
-      <div class="col column-1">
-        <div class="row project1">
-          <div class="col project1-left">
-            <h2>The beginning: What is your Zodiac?</h2>
-            <p>
-              My first coding project. Created with nothing but some basic
-              knowledge of HTML, CSS and JS.
-            </p>
-          </div>
-          <div class="col project1-right">
-            <img
-              src="images/Zodiac project.png"
-              alt="Zodiac-Project"
-              width="150px"
-            />
-          </div>
-        </div>
+    <section class="projects">
+      <h1>My projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-8 column-1">
+            <div class="row 1 project">
+              <div class="col project-left">
+                <h3>The beginning: What is your Zodiac?</h3>
+                <p>
+                  My first coding project. Created with nothing but some basic
+                  knowledge of HTML, CSS and JS.
+                </p>
+                <a
+                  href="https://serene-swirles-47a444.netlify.app/"
+                  target="_blank"
+                  >To the zodiac site</a
+                >
+              </div>
+              <div class="col project-right">
+                <img
+                  src="images/Zodiac project.png"
+                  alt="Zodiac-Project"
+                  width="150px"
+                />
+              </div>
+            </div>
 
-        <div class="row project2">
-          <div class="col project2-left">p2 left</div>
-          <div class="col project2-right">p2 right</div>
-        </div>
+            <div class="row 2 project">
+              <div class="col project-left">
+                <h3>Let's dig deeper: Weather forecast</h3>
+                <p>
+                  Created with a more advanced knowledge of HTML, CSS and JS, as
+                  well as API integration, Bootstrap and Hosting, I created this
+                  simple weather app.
+                </p>
+                <a
+                  href="https://silly-jennings-89ef5f.netlify.app/"
+                  target="_blank"
+                  >To the weather app</a
+                >
+              </div>
+              <div class="col project-right">
+                <img
+                  src="images/Weather Project.png"
+                  alt="Weather-Project"
+                  width="150px"
+                />
+              </div>
+            </div>
 
-        <div class="row project3">
-          <div class="col project3-left">p3 left</div>
-          <div class="col project3-right">p3 right</div>
+            <div class="row 3 project">
+              <div class="col project-left">
+                <h3>Let's go pro: My portfolio</h3>
+                <p>
+                  My next - and most recent - project is this very website.
+                  After adding responsiveness to my skill set, I created my
+                  first fully responsive website. Check it out on your computer,
+                  your phone or your tablet.
+                </p>
+                <a href="/" target="_blank">Back to the main page</a>
+              </div>
+              <div class="col project-right">
+                <img
+                  src="images/p3 placeholder.png"
+                  alt="Homepage-Project"
+                  width="150px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col column-2"><h3>Next project: React JS</h3></div>
         </div>
       </div>
-      <div class="col column-2">
-        Next proct: React JS //Why is this not a new column on the right side,
-        next to project 1?
-      </div>
-    </div>
+    </section>
   </body>
 </html>

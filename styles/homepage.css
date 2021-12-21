@@ -4,6 +4,22 @@ h2 {
   margin-top: 15px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+.project-left {
+  margin: 15px;
+}
+
+.project-left p {
+  text-align: justify;
+}
+
+.project-right {
+  padding: 15px;
+}
+
 .about p {
   text-align: justify;
   display: block;
