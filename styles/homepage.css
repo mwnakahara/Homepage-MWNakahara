@@ -8,23 +8,13 @@ h3 {
   font-size: 20px;
 }
 
-.project-left {
-  margin: 15px;
+img {
+  border: thin groove grey;
+  border-radius: 2%;
 }
 
-.project-left p {
-  text-align: justify;
-}
-
-.project-right {
-  padding: 15px;
-}
-
-.about p {
-  text-align: justify;
-  display: block;
-  margin: 0 auto;
-  padding: 30px 100px;
+.profile-pic {
+  border-radius: 20%;
 }
 
 .btn {
@@ -35,4 +25,29 @@ h3 {
 
 .homepage-buttons {
   padding: 40px 0;
+}
+
+.about p {
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  padding: 30px 100px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.project-left {
+  margin: 15px;
+}
+
+.project-left p {
+  text-align: justify;
+}
+
+.project-right {
+  padding: 15px;
 }
