@@ -1,3 +1,13 @@
+:root {
+  --main-font: "Lora", serif;
+  --background-color: rgb(15, 159, 92, 30%);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+}
+
 h1,
 h2 {
   text-align: center;
@@ -25,6 +35,14 @@ img {
 
 .homepage-buttons {
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-buttons li {
+  margin: 10px auto;
+  flex: 1;
+  list-style: none;
 }
 
 .about p {
@@ -32,12 +50,17 @@ img {
   display: block;
   margin: 0 auto;
   padding: 30px 100px;
+  font-style: italic;
 }
 
 .profile-pic {
   display: block;
   margin: 0 auto;
   width: 200px;
+}
+
+.project {
+  font-style: italic;
 }
 
 .project-left {
@@ -50,4 +73,17 @@ img {
 
 .project-right {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-right img {
+  max-height: 500px;
+  padding: 2px;
+  background: var(--background-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
 }
