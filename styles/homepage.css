@@ -1,6 +1,7 @@
 :root {
   --main-font: "Lora", serif;
   --background-color: rgb(15, 159, 92, 30%);
+  --accent-colour: rgb(255, 193, 7);
 }
 
 body {
@@ -9,13 +10,21 @@ body {
 }
 
 h1,
-h2 {
+.welcome {
   text-align: center;
-  margin-top: 15px;
+  margin: 30px auto 50px;
+}
+
+.welcome h1 {
+  margin-bottom: 0;
 }
 
 h3 {
   font-size: 20px;
+}
+
+p {
+  font-style: italic;
 }
 
 img {
@@ -34,7 +43,6 @@ img {
 }
 
 .homepage-buttons {
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
 }
@@ -82,6 +90,21 @@ img {
   max-height: 500px;
   padding: 2px;
   background: var(--background-color);
+}
+
+.contact {
+  display: block;
+  text-align: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--accent-colour);
+}
+
+.contact i {
+  font-size: 50px;
+  margin: 50px auto;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
