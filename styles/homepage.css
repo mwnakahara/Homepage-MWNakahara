@@ -1,7 +1,7 @@
 :root {
   --main-font: "Lora", serif;
   --background-color: rgb(15, 159, 92, 30%);
-  --accent-colour: rgb(255, 193, 7);
+  --accent-color: rgb(255, 193, 7);
 }
 
 body {
@@ -86,6 +86,11 @@ img {
   justify-content: center;
 }
 
+.project-right i {
+  color: var(--background-color);
+  font-size: 100px;
+}
+
 .project-right img {
   max-height: 500px;
   padding: 2px;
@@ -99,7 +104,7 @@ img {
 
 .contact a {
   text-decoration: none;
-  color: var(--accent-colour);
+  color: var(--accent-color);
 }
 
 .contact i {

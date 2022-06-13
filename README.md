@@ -10,4 +10,6 @@ bootstrap
 d-md-block d-none etc.
 col-md-6 col-lg-6 etc.
 
+d-flex
+
 review flexbox
