@@ -1,7 +1,10 @@
 :root {
   --main-font: "Lora", serif;
-  --background-color: rgb(15, 159, 92, 30%);
+  --background-color: rgba(15, 159, 92, 0.3);
   --accent-color: rgb(255, 193, 7);
+  --light-accent-color: rgba(255, 193, 7, 0.25);
+  --dark-bg-color: rgb(15, 159, 92, 0.1);
+  --branding-color: rgb(105, 126, 11);
 }
 
 body {
@@ -9,14 +12,14 @@ body {
   font-family: var(--main-font);
 }
 
+h1 {
+  color: var(--branding-color);
+}
+
 h1,
 .welcome {
   text-align: center;
   margin: 30px auto 50px;
-}
-
-.welcome h1 {
-  margin-bottom: 0;
 }
 
 h3 {
@@ -32,39 +35,46 @@ img {
   border-radius: 2%;
 }
 
-.profile-pic {
-  border-radius: 20%;
-}
-
 .btn {
   display: block;
   margin: 0 auto;
   width: fit-content;
 }
 
-.homepage-buttons {
+.main .welcome h1 {
+  margin-bottom: 0;
+}
+
+.main .homepage-buttons {
   display: flex;
   flex-direction: column;
 }
 
-.homepage-buttons li {
-  margin: 10px auto;
+.main .homepage-buttons li {
+  margin: 15px auto;
   flex: 1;
   list-style: none;
-}
-
-.about p {
-  text-align: justify;
-  display: block;
-  margin: 0 auto;
-  padding: 30px 100px;
-  font-style: italic;
 }
 
 .profile-pic {
   display: block;
   margin: 0 auto;
   width: 200px;
+  border-radius: 20%;
+}
+
+.about p {
+  text-align: justify;
+  display: block;
+  margin: 25px 100px;
+  padding: 30px 100px;
+  font-style: italic;
+
+  border-radius: 1%;
+  background-color: var(--dark-bg-color);
+  border-color: var(--light-accent-color);
+  border-width: 1px;
+  border-style: solid;
 }
 
 .project {
@@ -73,6 +83,16 @@ img {
 
 .project-left {
   margin: 15px;
+  border-radius: 1%;
+  background-color: var(--dark-bg-color);
+  border-color: var(--light-accent-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: 15px;
+}
+
+.project-left h3 {
+  text-align: center;
 }
 
 .project-left p {
@@ -102,14 +122,57 @@ img {
   text-align: center;
 }
 
+.contact-email,
+.contact-phone,
+.contact-li {
+  margin: 50px 15px;
+  padding: 30px;
+  border-radius: 15%;
+  background-color: var(--dark-bg-color);
+  border-color: var(--light-accent-color);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.contact-phone {
+  margin: 70px 15px 30px;
+}
+
+.contact-email {
+  margin: 10px 15px 90px;
+}
+
+.contact-li {
+  margin: 90px 15px 10px;
+}
+
+.contact h3 {
+  text-decoration: underline;
+}
+
 .contact a {
   text-decoration: none;
   color: var(--accent-color);
 }
 
+.contact a:hover {
+  color: white;
+}
+
 .contact i {
   font-size: 50px;
   margin: 50px auto;
+}
+
+.contact p {
+  margin-bottom: 0;
+}
+
+.contact-info-line {
+  color: var(--branding-color);
+  border-radius: 15%;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -128,9 +191,12 @@ footer li {
 }
 
 footer i {
-  color: black;
+  color: var(--branding-color);
+  padding: 10px;
+  margin: 30px;
   border-radius: 50%;
-  border-color: var(--accent-color);
-  border-width: 20px;
+  background-color: var(--light-accent-color);
+  border-color: var(--light-accent-color);
+  border-width: 1px;
   border-style: solid;
 }
