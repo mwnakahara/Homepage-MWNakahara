@@ -115,3 +115,22 @@ img {
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
 }
+
+footer {
+  margin: 100px 0 20px;
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0 30px;
+  font-size: 25px;
+}
+
+footer i {
+  color: black;
+  border-radius: 50%;
+  border-color: var(--accent-color);
+  border-width: 20px;
+  border-style: solid;
+}
