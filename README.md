@@ -15,3 +15,7 @@ Next:
 
 - make SEO friendly
 - add media queries --> @media (max/min-width: 000px) {...}
+
+- set img as background on main page?
+
+- decide hidden-columns bootstrap or media-queries

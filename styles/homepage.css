@@ -38,7 +38,6 @@ img {
 .btn {
   display: block;
   margin: 0 auto;
-  width: fit-content;
 }
 
 .main .welcome h1 {
@@ -54,6 +53,7 @@ img {
   margin: 15px auto;
   flex: 1;
   list-style: none;
+  width: 125px;
 }
 
 .profile-pic {
@@ -77,8 +77,20 @@ img {
   border-style: solid;
 }
 
+.about .btn {
+  width: 250px;
+}
+
+.projects .hidden-rows {
+  display: none;
+}
+
 .project {
   font-style: italic;
+}
+
+.projects .project a {
+  width: 190px;
 }
 
 .project-left {
@@ -104,6 +116,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .project-right i {
@@ -199,4 +212,36 @@ footer i {
   border-color: var(--light-accent-color);
   border-width: 1px;
   border-style: solid;
+}
+
+@media (max-width: 992px) {
+  .about p {
+    margin: 25px 100px;
+    padding: 30px 75px;
+  }
+  .hidden-rows {
+    display: block;
+  }
+  .projects .column-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .about p {
+    margin: 25px 75px;
+    padding: 30px 75px;
+  }
+}
+@media (max-width: 575px) {
+  .about p {
+    margin: 25px 50px;
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 495px) {
+  .about p {
+    margin: 25px 25px;
+    padding: 30px 25px;
+  }
 }
