@@ -219,11 +219,17 @@ footer i {
     margin: 25px 100px;
     padding: 30px 75px;
   }
-  .hidden-rows {
+  .projects .hidden-rows {
     display: block;
   }
   .projects .column-2 {
     display: none;
+  }
+  .contact-email,
+  .contact-phone,
+  .contact-li {
+    margin: 50px 15px;
+    padding: 30px;
   }
 }
 
@@ -233,6 +239,7 @@ footer i {
     padding: 30px 75px;
   }
 }
+
 @media (max-width: 575px) {
   .about p {
     margin: 25px 50px;
@@ -240,8 +247,56 @@ footer i {
   }
 }
 @media (max-width: 495px) {
+  .main ul {
+    padding: 0;
+  }
+
   .about p {
     margin: 25px 25px;
     padding: 30px 25px;
+  }
+
+  .contact h1 {
+    margin-bottom: 30px;
+  }
+
+  .contact-email,
+  .contact-phone,
+  .contact-li {
+    margin: 30px 5px;
+    padding: 13px;
+  }
+
+  .contact-email h1,
+  .contact-phone h1,
+  .contact-li h1 {
+    font-size: 16px;
+  }
+
+  .contact-email p,
+  .contact-phone p,
+  .contact-li p {
+    font-size: 15px;
+  }
+
+  .contact i {
+    font-size: 40px;
+    margin: 20px auto;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+
+  footer li {
+    margin: 0 auto;
+  }
+
+  footer i {
+    margin: 30px 20px;
   }
 }
