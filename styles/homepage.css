@@ -310,6 +310,16 @@ footer i {
     margin: 25px 50px;
     padding: 30px 50px;
   }
+
+  .credit-name,
+  .credit-git {
+    color: var(--background-color);
+  }
+
+  .credit-name:hover,
+  .credit-git:hover {
+    color: var(--accent-color);
+  }
 }
 
 @media (max-width: 495px) {
