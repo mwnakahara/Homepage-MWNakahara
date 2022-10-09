@@ -44,6 +44,10 @@ img {
   margin-bottom: 0;
 }
 
+.main ul {
+  padding: 0;
+}
+
 .main .homepage-buttons {
   display: flex;
   flex-direction: column;
@@ -188,12 +192,20 @@ img {
   border-style: solid;
 }
 
+.hidden-longer-line {
+  display: none;
+}
+
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
 }
 
 footer {
   margin: 100px 0 20px;
+}
+
+footer ul {
+  padding: 0;
 }
 
 footer li {
@@ -214,11 +226,49 @@ footer i {
   border-style: solid;
 }
 
+.credit {
+  font-size: 15px;
+  text-align: center;
+  text-decoration-line: overline;
+  color: var(--branding-color);
+  margin: 25px 0 15px;
+}
+
+.credit-name,
+.credit-git {
+  color: var(--branding-color);
+  text-decoration-line: none;
+  font-style: italic;
+}
+
+.credit-name:hover,
+.credit-git:hover {
+  color: var(--background-color);
+}
+
 @media (max-width: 992px) {
   .about p {
     margin: 25px 100px;
     padding: 30px 75px;
   }
+
+  .project-left {
+    margin: 0;
+  }
+
+  .project-left p {
+    text-align: center;
+  }
+
+  .project-right {
+    margin-bottom: 75px;
+  }
+
+  .project-right img {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
   .projects .hidden-rows {
     display: block;
   }
@@ -238,19 +288,31 @@ footer i {
     margin: 25px 75px;
     padding: 30px 75px;
   }
+
+  .contact-container {
+    margin: 0 15px;
+  }
+
+  .contact-email,
+  .contact-phone,
+  .contact-li {
+    margin: 50px auto;
+    padding: 30px;
+  }
 }
 
 @media (max-width: 575px) {
+  .project {
+    margin: 0 5px;
+  }
+
   .about p {
     margin: 25px 50px;
     padding: 30px 50px;
   }
 }
-@media (max-width: 495px) {
-  .main ul {
-    padding: 0;
-  }
 
+@media (max-width: 495px) {
   .about p {
     margin: 25px 25px;
     padding: 30px 25px;
@@ -267,9 +329,9 @@ footer i {
     padding: 13px;
   }
 
-  .contact-email h1,
-  .contact-phone h1,
-  .contact-li h1 {
+  .contact-email h3,
+  .contact-phone h3,
+  .contact-li h3 {
     font-size: 16px;
   }
 
@@ -288,15 +350,53 @@ footer i {
     margin-top: 40px;
   }
 
-  footer ul {
-    padding: 0;
-  }
-
   footer li {
     margin: 0 auto;
   }
 
   footer i {
     margin: 30px 20px;
+  }
+
+  .credit {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 335px) {
+  .about p {
+    margin: 25px 15px;
+    padding: 20px 20px;
+  }
+
+  .contact-container {
+    margin: 0 5px;
+  }
+
+  .contact-email,
+  .contact-phone,
+  .contact-li {
+    margin: 20px 5px;
+  }
+
+  .contact i {
+    font-size: 30px;
+    margin: 20px auto;
+  }
+
+  .contact-li small {
+    font-size: 12.5px;
+  }
+
+  .visible-longer-line {
+    display: none;
+  }
+
+  .hidden-longer-line {
+    display: block;
+  }
+
+  .credit {
+    font-size: 10px;
   }
 }

@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <title>Contact me - MWNakahara</title>
+    <meta
+      name="description"
+      content="This is the contact page of MWNakahara, a front-end web developer based in Vancouver BC. If you'd like to contact MWNakahara, then this is the page you're looking for."
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,10 +73,10 @@
     <section class="contact">
       <h1>How to contact me</h1>
       <div class="container">
-        <div class="row d-flex justify-content-between">
+        <div class="contact-container row d-flex justify-content-between">
           <div class="col-md contact-phone">
             <h3>Phone</h3>
-            <a href="tel:+17788592803" target="_blank">
+            <a href="tel:+17788592803" target="_blank" title="Call MWNakahara">
               <i class="fa fa-phone"></i
             ></a>
             <p>If you're in a hurry and prefer a more personal approach.</p>
@@ -82,7 +86,10 @@
 
           <div class="col-md contact-email">
             <h3>Email <small>(my personal favourite)</small></h3>
-            <a href="mailto:mwnakahara@gmail.com" target="_blank"
+            <a
+              href="mailto:mwnakahara@gmail.com"
+              target="_blank"
+              title="Email an MWNakahara"
               ><i class="fa fa-envelope"></i
             ></a>
             <p>The easiest, most reliable way to reach me.</p>
@@ -92,12 +99,21 @@
 
           <div class="col-md contact-li">
             <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/mwnakahara/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/mwnakahara/"
+              target="_blank"
+              title="MWNakahara's LinkedIn"
+            >
               <i class="fa fa-linkedin"></i
             ></a>
             <p>If you'd like to connect on social media instead.</p>
             <br />
-            <p class="contact-info-line">www.linkedin.com/in/mwnakahara</p>
+            <p class="contact-info-line visible-longer-line">
+              www.linkedin.com/in/mwnakahara
+            </p>
+            <p class="contact-info-line hidden-longer-line">
+              <small>www.linkedin.com/in/mwnakahara</small>
+            </p>
           </div>
         </div>
       </div>
@@ -107,22 +123,43 @@
       <div class="container">
         <ul class="d-flex justify-content-center">
           <li>
-            <a href="https://github.com/mwnakahara" target="_blank"
+            <a
+              href="https://github.com/mwnakahara"
+              target="_blank"
+              title="Github"
               ><i class="fa fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="mailto:mwnakahara@gmail.com" target="_blank"
+            <a href="mailto:mwnakahara@gmail.com" target="_blank" title="Email"
               ><i class="fa fa-envelope"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mwnakahara/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/mwnakahara/"
+              target="_blank"
+              title="LinkedIn"
+            >
               <i class="fa fa-linkedin"></i
             ></a>
           </li>
         </ul>
       </div>
     </footer>
+    <div class="credit">
+      This site was coded by
+      <a href="/" target="_top" class="credit-name" title="Homepage"
+        >MWNakahara</a
+      >
+      and is
+      <a
+        href="https://github.com/mwnakahara/Homepage-MWNakahara"
+        target="_blank"
+        class="credit-git"
+        title="Github"
+        >open-sourced</a
+      >.
+    </div>
   </body>
 </html>
