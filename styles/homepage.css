@@ -94,7 +94,7 @@ img {
 }
 
 .projects .project a {
-  width: 190px;
+  width: 275px;
 }
 
 .project-left {
@@ -129,6 +129,7 @@ img {
 }
 
 .project-right img {
+  width: 100%;
   max-height: 500px;
   padding: 2px;
   background: var(--background-color);
