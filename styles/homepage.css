@@ -1,10 +1,10 @@
 :root {
   --main-font: "Lora", serif;
-  --background-color: rgba(15, 159, 92, 0.3);
+  --background-color: rgba(15, 159, 92, 0.302);
   --accent-color: rgb(255, 193, 7);
   --light-accent-color: rgba(255, 193, 7, 0.25);
   --dark-bg-color: rgb(15, 159, 92, 0.1);
-  --branding-color: rgb(105, 126, 11);
+  --branding-color: rgb(105, 127, 11);
 }
 
 body {
